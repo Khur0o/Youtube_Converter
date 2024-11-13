@@ -59,7 +59,7 @@ This project is licensed under the Apache License, Version 2.0. See the [LICENSE
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Khuro/Converter.git
+git clone https://github.com/Khuro/Youtube_Converter.git
 cd Converter
 
 
