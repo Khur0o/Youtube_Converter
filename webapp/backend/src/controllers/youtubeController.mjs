@@ -146,7 +146,8 @@ router.get('/downloads/:timestamp/:filename', (req, res) => {
         return res.status(404).send('File not found');
     }
 
-    res.setHeader('Content-Disposition', `attachment; filename="${filename}"`);
+    const encodedFilename = encodeURIComponent(filename);
+    res.setHeader('Content-Disposition', `attachment; filename="${encodedFilename}"; filename*=UTF-8''${encodedFilename}`);
     res.download(filePath, (err) => {
         if (err) {
             console.error("File failed to download:", err.message);
