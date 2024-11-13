@@ -1,0 +1,27 @@
+{
+    "name": "converter",
+    "version": "1.0.0",
+    "main": "src/app.mjs",
+    "type": "module",
+    "scripts": {
+        "start": "nodemon src/app.mjs",
+        "build": "echo 'No build step defined'"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.21.0",
+        "node-fetch": "^3.3.2",
+        "youtube-dl-exec": "^3.0.10",
+        "ytdl-core": "^4.11.5"
+    },
+    "keywords": [
+        "converter"
+    ],
+    "author": "Khur0o",
+    "license": "ISC",
+    "description": "Youtube Download Generator",
+    "devDependencies": {
+        "nodemon": "^3.1.7"
+    }
+}

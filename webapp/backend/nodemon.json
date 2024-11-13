@@ -1,0 +1,6 @@
+{
+    "watch": ["src"],
+    "ignore": ["src/downloads/*" , "src/downloads" , "src/downloads/**" , "src/downloads*/*"],
+    "ext": "js,mjs,json"
+}
+  

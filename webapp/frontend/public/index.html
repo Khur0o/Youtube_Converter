@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/icon.png">
+</head>
+<body>
+    <section>
+        <form action="/submit-form" method="POST" onsubmit="return false;">
+            <div id="converterUI">
+                <div id="url-form" class="form-section">
+                    <label for="url-input">Youtube Link:</label>
+                    <input type="text" id="url-input" placeholder="Enter URL here...">
+                    <button id="convert" type="button" value="Convert">Convert</button>
+                </div>
+
+                <div id="form-container" class="form-container" style="display: none;">
+                    <div class="left-picture">
+                        <div class="thumbnail-container">
+                            <img id="thumbnail-image1" src="" alt="YouTube Thumbnail" />
+                            <!--<button type="button" id="edit-thumbnail">Edit Thumbnail</button>-->
+                        </div>
+                        <p id="youtube-title">Loading...</p>
+                        <!-- Add file input for custom thumbnail 
+                        <input type="file" id="thumbnail-upload" accept="image/*" >-->
+                    </div>
+                    
+                    <div class="right-section">
+                        <div class="form-section">
+                            <label for="file-format">File Format:</label>
+                            <select id="file-format">
+                                <option value="mp4">Video</option>
+                                <option value="mp3">Audio</option>
+                            </select>
+                        </div>
+    
+                        <div class="form-section" id="quality-format">
+                            <label for="video-quality" style="display:none;">Video Quality:</label>
+                            <select id="video-quality" style="display:none;"></select>
+
+                            <label for="audio-quality" style="display:none;">Audio Quality:</label>
+                            <select id="audio-quality" style="display:none;"></select>
+                        </div>
+    
+                        <button id="create" type="button">Download</button>
+                    </div>
+
+                    <div id="loading-overlay" style="display:none;">
+                        <div class="loading-content">
+                            <center><p>Please Wait...</p></center>
+                            <div class="spinner"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </form>
+    </section>
+
+<footer>
+    <p>&copy; 2024 Khur0o</p>
+</footer>
+
+<script src="../src/components/index.js"></script> 
+</body>
+</html>
